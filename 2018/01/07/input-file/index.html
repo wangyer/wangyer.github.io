@@ -94,16 +94,17 @@
 
 
 
-<meta name="description" content="喂，你看到远方了吗。。。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Wangyer&#39;s Milk">
-<meta property="og:url" content="http://wangyer.com/index.html">
+<meta name="description" content="一、使用trigger(‘click’)无效实际应用中，我们往往会通过隐藏input file，而用一个漂亮的按钮来触发input file，实现文件上传，这时就会用到trigger(‘click’),但是会发现在一些浏览器上不能生效，这是因为input被隐藏的（display:none），解决办法如下： 1、给input设置width:0,height:0 2、给input设置opacity:0">
+<meta property="og:type" content="article">
+<meta property="og:title" content="input file兼容问题">
+<meta property="og:url" content="http://wangyer.com/2018/01/07/input-file/index.html">
 <meta property="og:site_name" content="Wangyer&#39;s Milk">
-<meta property="og:description" content="喂，你看到远方了吗。。。">
+<meta property="og:description" content="一、使用trigger(‘click’)无效实际应用中，我们往往会通过隐藏input file，而用一个漂亮的按钮来触发input file，实现文件上传，这时就会用到trigger(‘click’),但是会发现在一些浏览器上不能生效，这是因为input被隐藏的（display:none），解决办法如下： 1、给input设置width:0,height:0 2、给input设置opacity:0">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-08T07:25:44.764Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wangyer&#39;s Milk">
-<meta name="twitter:description" content="喂，你看到远方了吗。。。">
+<meta name="twitter:title" content="input file兼容问题">
+<meta name="twitter:description" content="一、使用trigger(‘click’)无效实际应用中，我们往往会通过隐藏input file，而用一个漂亮的按钮来触发input file，实现文件上传，这时就会用到trigger(‘click’),但是会发现在一些浏览器上不能生效，这是因为input被隐藏的（display:none），解决办法如下： 1、给input设置width:0,height:0 2、给input设置opacity:0">
 
 
 
@@ -132,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://wangyer.com/"/>
+  <link rel="canonical" href="http://wangyer.com/2018/01/07/input-file/"/>
 
 
 
 
 
-  <title>Wangyer's Milk</title>
+  <title>input file兼容问题 | Wangyer's Milk</title>
   
 
 
@@ -173,9 +174,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -302,9 +301,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -334,9 +333,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/07/input-file/" itemprop="url">input file兼容问题</a></h1>
+          <h1 class="post-title" itemprop="name headline">input file兼容问题</h1>
         
 
         <div class="post-meta">
@@ -397,9 +394,7 @@
       
 
       
-        
-          
-            <h3 id="一、使用trigger-‘click’-无效"><a href="#一、使用trigger-‘click’-无效" class="headerlink" title="一、使用trigger(‘click’)无效"></a>一、使用trigger(‘click’)无效</h3><p>实际应用中，我们往往会通过隐藏input file，而用一个漂亮的按钮来触发input file，实现文件上传，这时就会用到trigger(‘click’),但是会发现在一些浏览器上不能生效，这是因为input被隐藏的（display:none），解决办法如下：</p>
+        <h3 id="一、使用trigger-‘click’-无效"><a href="#一、使用trigger-‘click’-无效" class="headerlink" title="一、使用trigger(‘click’)无效"></a>一、使用trigger(‘click’)无效</h3><p>实际应用中，我们往往会通过隐藏input file，而用一个漂亮的按钮来触发input file，实现文件上传，这时就会用到trigger(‘click’),但是会发现在一些浏览器上不能生效，这是因为input被隐藏的（display:none），解决办法如下：</p>
 <p>1、给input设置width:0,height:0</p>
 <p>2、给input设置opacity:0</p>
 <h3 id="二、“没有应用可执行操作”问题"><a href="#二、“没有应用可执行操作”问题" class="headerlink" title="二、“没有应用可执行操作”问题"></a>二、“没有应用可执行操作”问题</h3><p>h5页在手机上实现上传图片，会用到input file来实现，但在小米、华为手机上触发按钮后，弹出“没有应用可执行操作”，解决办法如下：</p>
@@ -407,8 +402,6 @@
 <p>改成<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input  <span class="built_in">type</span>=<span class="string">"file"</span> accept=<span class="string">"image/jpg,image/jpeg,image/png,image/gif"</span>&gt;</span><br></pre></td></tr></table></figure></p>
 <p>如果没有格式限制的话可改成<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input  <span class="built_in">type</span>=<span class="string">"file"</span> accept=<span class="string">"image/*"</span>&gt;</span><br></pre></td></tr></table></figure></p>
 
-          
-        
       
     </div>
     
@@ -425,12 +418,12 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -440,10 +433,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -451,6 +445,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -471,8 +469,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.JPG"
@@ -529,6 +536,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、使用trigger-‘click’-无效"><span class="nav-number">1.</span> <span class="nav-text">一、使用trigger(‘click’)无效</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、“没有应用可执行操作”问题"><span class="nav-number">2.</span> <span class="nav-text">二、“没有应用可执行操作”问题</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -654,10 +677,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 

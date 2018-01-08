@@ -97,7 +97,7 @@
 <meta name="description" content="喂，你看到远方了吗。。。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Wangyer&#39;s Milk">
-<meta property="og:url" content="http://wangyer.com/index.html">
+<meta property="og:url" content="http://wangyer.com/archives/2018/index.html">
 <meta property="og:site_name" content="Wangyer&#39;s Milk">
 <meta property="og:description" content="喂，你看到远方了吗。。。">
 <meta property="og:locale" content="zh-Hans">
@@ -132,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://wangyer.com/"/>
+  <link rel="canonical" href="http://wangyer.com/archives/2018/"/>
 
 
 
 
 
-  <title>Wangyer's Milk</title>
+  <title>归档 | Wangyer's Milk</title>
   
 
 
@@ -173,9 +173,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left  page-archive  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -302,148 +300,75 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
-    
+
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
+
+      <span class="archive-page-counter">
+        
+        
+        
+          
+        
+        嗯..! 目前共计 1 篇日志。 继续努力。
+      </span>
+
       
 
-  
+        
+        
+        
 
-  
-  
-  
+        
+          
+          <div class="collection-title">
+            <h2 class="archive-year motion-element" id="archive-year-2018">2018</h2>
+          </div>
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wangyer.com/2018/01/07/input-file/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="wangyer">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wangyer's Milk">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/07/input-file/" itemprop="url">input file兼容问题</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+            <a class="post-title-link" href="/2018/01/07/input-file/" itemprop="url">
               
-                <span class="post-meta-item-text">发表于</span>
+                <span itemprop="name">input file兼容问题</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-07T17:25:50+08:00">
-                2018-01-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/01/07/input-file/" class="leancloud_visitors" data-flag-title="input file兼容问题">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数 </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
+            </a>
         
-          
-            <h3 id="一、使用trigger-‘click’-无效"><a href="#一、使用trigger-‘click’-无效" class="headerlink" title="一、使用trigger(‘click’)无效"></a>一、使用trigger(‘click’)无效</h3><p>实际应用中，我们往往会通过隐藏input file，而用一个漂亮的按钮来触发input file，实现文件上传，这时就会用到trigger(‘click’),但是会发现在一些浏览器上不能生效，这是因为input被隐藏的（display:none），解决办法如下：</p>
-<p>1、给input设置width:0,height:0</p>
-<p>2、给input设置opacity:0</p>
-<h3 id="二、“没有应用可执行操作”问题"><a href="#二、“没有应用可执行操作”问题" class="headerlink" title="二、“没有应用可执行操作”问题"></a>二、“没有应用可执行操作”问题</h3><p>h5页在手机上实现上传图片，会用到input file来实现，但在小米、华为手机上触发按钮后，弹出“没有应用可执行操作”，解决办法如下：</p>
-<p>将<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input  <span class="built_in">type</span>=<span class="string">"file"</span> accept=<span class="string">".jpg,.jpeg,.png,.gif"</span>&gt;</span><br></pre></td></tr></table></figure></p>
-<p>改成<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input  <span class="built_in">type</span>=<span class="string">"file"</span> accept=<span class="string">"image/jpg,image/jpeg,image/png,image/gif"</span>&gt;</span><br></pre></td></tr></table></figure></p>
-<p>如果没有格式限制的话可改成<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input  <span class="built_in">type</span>=<span class="string">"file"</span> accept=<span class="string">"image/*"</span>&gt;</span><br></pre></td></tr></table></figure></p>
+      </h2>
 
-          
-        
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-01-07T17:25:50+08:00"
+              content="2018-01-07" >
+          01-07
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
       
+
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
   
   
   
-  </article>
-
-
-    
-  </section>
 
   
+
 
 
           </div>
@@ -654,10 +579,12 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
-
   
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  
+
 
   
 
