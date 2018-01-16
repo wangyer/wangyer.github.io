@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[手机端同样环境下，某个页面访问时出现空白]]></title>
+    <url>%2F2018%2F01%2F16%2Fpage-compatible%2F</url>
+    <content type="text"><![CDATA[昨天发生了一件奇怪的事情，在红米note3上，同样是在测试环境下的h5页面，其中一个页，用ip打开可以访问，但是换成host配置的域名，一直是空白页，怪的很哎，经过了各种研究，后来发现，即使把页面删除的就剩下div了，依然不成功，天哪，更奇怪了，所以想到了，应该是手机的设置问题，把缓存清除了，依然不ok，开始找浏览器的各种设置，发现了广告拦截，关闭并清除拦截记录后，哇，可以了哎。 原因分析： 浏览页面时被浏览器当作了广告，操作时没注意直接同意当作广告拦截。]]></content>
+      <tags>
+        <tag>兼容性问题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[input file兼容问题]]></title>
     <url>%2F2018%2F01%2F07%2Finput-file%2F</url>
     <content type="text"><![CDATA[一、使用trigger(‘click’)无效实际应用中，我们往往会通过隐藏input file，而用一个漂亮的按钮来触发input file，实现文件上传，这时就会用到trigger(‘click’),但是会发现在一些浏览器上不能生效，这是因为input被隐藏的（display:none），解决办法如下： 1、给input设置width:0,height:0 2、给input设置opacity:0 二、“没有应用可执行操作”问题h5页在手机上实现上传图片，会用到input file来实现，但在小米、华为手机上触发按钮后，弹出“没有应用可执行操作”，解决办法如下： 将1&lt;input type="file" accept=".jpg,.jpeg,.png,.gif"&gt; 改成1&lt;input type="file" accept="image/jpg,image/jpeg,image/png,image/gif"&gt; 如果没有格式限制的话可改成1&lt;input type="file" accept="image/*"&gt;]]></content>
+      <tags>
+        <tag>html</tag>
+      </tags>
   </entry>
 </search>
